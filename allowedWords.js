@@ -1,4 +1,4 @@
-export default ALLOWED_WORDS= [
+const ALLOWED_WORDS= [
     "aahed",
     "aalii",
     "aargh",
@@ -12972,3 +12972,5 @@ export default ALLOWED_WORDS= [
     "zesty",
     "zonal"
 ]
+
+export default ALLOWED_WORDS;

@@ -8,7 +8,7 @@ let correctWord = '';
 initGame();
 
 function initGame() {
-    correctWord = ALLOWED_WORDS[Math.floor(Math.random() * ALLOWED_WORDS.length)];
+    correctWord = ALLOWED_WORDS[Math.floor(Math.random() * ALLOWED_WORDS.length)].toUpperCase();
     initKeyboardListener();
     initButtonsListener();
 
@@ -89,6 +89,12 @@ function enterWord(){
 }
 
 function checkWord(word){
+    
+    if (!ALLOWED_WORDS.includes(word.toLowerCase())) {
+        showAlert("Not a valid word");
+        return;
+    }
+
     let currentWord = document.getElementById(7 - remainingGuesses);
     currentWord.style.color = 'white'
     

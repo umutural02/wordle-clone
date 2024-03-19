@@ -30,7 +30,7 @@ function initGame() {
     }
 
     function initButtonsListener(){
-        for (row of document.getElementsByClassName('keyboard-row')){
+        for (let row of document.getElementsByClassName('keyboard-row')){
             row.addEventListener('click', function(event) {
                 
                 let tagName = event.target.tagName;

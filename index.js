@@ -1,4 +1,4 @@
-import ALLOWED_WORDS from "./allowedWords";
+import ALLOWED_WORDS from "./allowedWords.js";
 
 let alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 let remainingGuesses = 6;

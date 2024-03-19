@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'NYTKarnakCondensed';
+    src: url('./nyt-karnakcondensed.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NYTFranklin';
+    src: url('./nyt-franklin.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+body {
+    font-family: 'NYTKarnakCondensed', sans-serif;
+    font-size: 24px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #d3d6da;
+    height: 65px;
+
+}
+
+.game {
+    display: grid;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.word {
+    font-family: 'NYTFranklin';
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.word-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 52px;
+    width: 52px;
+    border: solid 2px #d3d6da;
+}
+
+.filled {
+    border: solid 2px black;
+}
+
+.keyboard {
+    font-family: 'NYTFranklin', sans-serif;
+    font-weight: bold;
+    display: grid;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.keyboard-row {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 8px;
+    flex: 1;
+
+}
+
+.letter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d3d6da;
+    padding: 0;
+    border: 0;
+    border-radius: 4px;
+    height: 58px;
+    width: 43px;
+    margin: 0 6px 0 0;
+    font-size: 20px;
+}
+
+.alert{
+    font-family: "NYTFranklin";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+}
+
+.alert-message {
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    padding: 0.4vw 0.6vw;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px)}
+    10% { transform: translate(-1px, -2px)}
+    20% { transform: translate(-3px, 0px)}
+    30% { transform: translate(3px, 2px)}
+    40% { transform: translate(1px, -1px)}
+    50% { transform: translate(-1px, 2px)}
+    60% { transform: translate(-3px, 1px)}
+    70% { transform: translate(3px, 1px)}
+    80% { transform: translate(-1px, -1px)}
+    90% { transform: translate(1px, 2px)}
+    100% { transform: translate(1px, -2px)}
+}
+
+.shake {
+    animation: shake 0.5s;
+}
+
+.hidden {
+    display: none;
+}
+

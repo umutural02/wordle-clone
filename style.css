@@ -86,6 +86,19 @@ body {
     font-size: 20px;
 }
 
+.enter-letter {
+    width: 8vw;
+    min-width: 40px;
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 600px) {
+    .letter {
+        height: 32px;
+        width: 24px;
+    }
+}
+
 .alert{
     font-family: "NYTFranklin";
     display: flex;

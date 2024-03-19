@@ -126,7 +126,6 @@ function checkWord(word){
             if (wrongLetters.includes(letters[i].textContent)) {
                 letters[i].style.backgroundColor = '#787c7e';
                 letters[i].style.color = 'white';
-                letters[i].disabled = true;
             }
         }
     }

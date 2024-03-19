@@ -81,7 +81,6 @@ function enterWord(){
     
     if (word.length === 5) {
         checkWord(word);
-        remainingGuesses--;
     } else {
         showAlert("Not enough letters");
     }
@@ -131,6 +130,8 @@ function checkWord(word){
             }
         }
     }
+
+    remainingGuesses--;
 }
 
 function showAlert(message) {

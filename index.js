@@ -35,9 +35,9 @@ function initGame() {
                 
                 let tagName = event.target.tagName;
                 if (tagName === 'svg' || tagName === 'path') removeLetter();
+                if (event.target.textContent === 'ENTER')  enterWord();
                 if (event.target.className !== 'letter') return;
 
-                if (event.target.textContent === 'ENTER')  enterWord();
                 else if (event.target.id == 'backspace') removeLetter();
                 else writeLetter(event.target.textContent);
                 
